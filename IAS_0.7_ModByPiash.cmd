@@ -153,7 +153,7 @@ if defined activate goto _activate
 :MainMenu
 
 cls
-title  IDM Activation Script 0.7 - @ModByPiash & @Fakeriz
+title  IDM Activation Script 0.7 - @ModByPiash @Fakeriz
 mode 65, 25
 
 :: Check firewall status
@@ -181,11 +181,11 @@ set _status=Status_Unclear
 set _col=%_Yellow%
 )
 
-call :_color2 %_White% "        " %_Green% "  Create By Piash & Edit by Fakeriz"
+call :_color2 %_White% "        " %_Green% " Fakeriz "
 echo:          _____________________________________________   
 echo: 
-echo:          Telegram: @ModByPiash @Fakeriz
-echo:          Github: https://github.com/lstprjct
+echo:          Telegram: @Fakeriz
+echo:          Github: https://github.com/Fakeriz
 echo:          _____________________________________________   
 echo:                                                          
 echo:          [1] Activate IDM                                
@@ -421,7 +421,7 @@ echo:
 echo Applying registration details...
 echo:
 
-If not defined name set name=Piash
+If not defined name set name=Fakeriz
 
 set "reg=HKCU\SOFTWARE\DownloadManager /v FName /t REG_SZ /d "%name%"" & call :_rcont
 set "reg=HKCU\SOFTWARE\DownloadManager /v LName /t REG_SZ /d """ & call :_rcont
